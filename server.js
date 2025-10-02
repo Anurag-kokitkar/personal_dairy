@@ -16,7 +16,7 @@ const diarySchema = new mongoose.Schema({
 const Diary = mongoose.model("Diary", diarySchema);
 
 // Connect to MongoDB
-mongoose.connect("mongodb://127.0.0.1:27017/diaryApp", {
+mongoose.connect("YOUR_API", {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(() => console.log("✅ MongoDB Connected"))
@@ -89,3 +89,4 @@ app.get("/diary/search", async (req, res) => {
 // Start server
 const PORT = 5000;
 app.listen(PORT, () => console.log(`🚀 Server running at http://localhost:${PORT}`));
+
