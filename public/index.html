@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Diary</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Personal Diary</h1>
+
+  <!-- Search Bar -->
+  <div class="search-container">   
+    <input type="text" id="searchInput" placeholder="Search entries...">
+    <button onclick="searchEntries()">Search</button>
+    <button onclick="fetchEntries()">Reset</button>
+  </div>
+
+  <!-- Diary Form -->
+  <form id="diaryForm">
+    <input type="text" id="title" placeholder="Title" required><br>
+    <textarea id="content" placeholder="Content" required></textarea><br>
+    <button type="submit">Save</button>
+  </form>
+
+  <h2 class="entries-title">Entries</h2>
+  <ul id="entriesList"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
